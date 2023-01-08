@@ -32,8 +32,9 @@ More configuration options can be view in the manual at Section 3. Personally I 
 
 # Quality Of Life Configurations
 
-Unfortunately/Fortunately the Orange Pi 5 runs on arm64 since google chrome is based off of amd64 one can not install it. Either install firefox or use the chromium browser google chrome is based off of. This comes shipped on the image I used.  
+1) Unfortunately/Fortunately the Orange Pi 5 runs on arm64 since google chrome is based off of amd64 one can not install it. Either install firefox or use the chromium browser google chrome is based off of. This comes shipped on the image I used.  
 In order to enable darkmode follow the steps at https://dev.to/felixdusengimana/how-to-enable-dark-mode-in-chrome-on-ubuntuno-code-apps-themes-2p41.
+2) I enabled the universe repository on the main desktop environment by going to Applications->Settings->Additional Drivers. Once the window is open select the Ubuntu Software tab and enable universe. Follow all installation prompts and refresh the repo.
 
 
 
