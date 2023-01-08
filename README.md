@@ -5,7 +5,7 @@ Dot files are stored in Dot_Folders. The following subdirectories exist:
 
 1) .config contains all config files that are located at ~/ (either /root/ or /home/"your_user_name"/) under the directory of the same name.
 
-# Loading The OS Image
+# Loading The Official Ubuntu OS Image
 Please consult the general guide given in Resources/User_Manual for more information.  
 The official supported images can be obtained from http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/service-and-support/Orange-pi-5.html.  
 
@@ -29,6 +29,16 @@ The default users and loging details are:
 2) **orangepi** -> **orangepi**
 
 More configuration options can be view in the manual at Section 3. Personally I only opted to disable automatic desktop login by executing **sudo disable_desktop_autologin.sh**. Further Section 3.4.5 details how to entirely switch off the default desktop environment by entering the Orange Pi 5 config with **sudo orangepi-config**. As I will be using the i3 desktop environment this can and probably should be disabled for performance reasons.
+
+# Loading The Armbian OS Image
+
+Unfortunately as of writing pulseaudio did not work when I used the Orange Pi's Ubuntu image. I am sure it can be fixed or that a reflash would get it running again. Some talk of debugging to see if the audio card is working can be found in Section 3.12. 
+
+1) Clear the SD card by following the steps given at https://www.easeus.com/computer-instruction/format-sd-card-in-linux.html#using_terminal. Essentially use diskmanager to format the partitions and then clear all partitions to have a fresh SD card.
+2) Download the armbian image from https://www.armbian.com/orangepi-5/ . I opted to go with Cinnamon desktop but this won't matter since i3 will be installed later.
+3) Install xz-utils by using **sudo apt-get install xz-utils** and unzip the image by using the command **unxz ubuntu-19.10-preinstalled-server-arm64+raspi3.img.xz**. Replace ubuntu-19.10... with whichever file you chose to download.
+4) Repeat step 5-8 from the previous Ubuntu image's steps. (Etching the image on the SD card).
+
 
 # Quality Of Life Configurations
 
