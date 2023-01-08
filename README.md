@@ -1,5 +1,9 @@
 # Orange Pi 5 Dev
-Repository containing information about my current development setup on the Orange Pi 5. Information will include dot files, config directories and steps followed to create the development setup. In future any code written for the Orange Pi 5 will be included here.  
+Repository containing information about my current development setup on the Orange Pi 5. Information will include dot files, config directories and steps followed to create the development setup. In future any code written for the Orange Pi 5 will be included here. 
+
+Dot files are stored in Dot_Folders. The following subdirectories exist:
+
+1) .config contains all config files that are located at ~/ (either /root/ or /home/"your_user_name"/) under the directory of the same name.
 
 # Loading The OS Image
 Please consult the general guide given in Resources/User_Manual for more information.  
