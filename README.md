@@ -30,5 +30,10 @@ The default users and loging details are:
 
 More configuration options can be view in the manual at Section 3. Personally I only opted to disable automatic desktop login by executing **sudo disable_desktop_autologin.sh**. Further Section 3.4.5 details how to entirely switch off the default desktop environment by entering the Orange Pi 5 config with **sudo orangepi-config**. As I will be using the i3 desktop environment this can and probably should be disabled for performance reasons.
 
+# Quality Of Life Configurations
+
+Unfortunately/Fortunately the Orange Pi 5 runs on arm64 since google chrome is based off of amd64 one can not install it. Either install firefox or use the chromium browser google chrome is based off of. This comes shipped on the image I used.  
+In order to enable darkmode follow the steps at https://dev.to/felixdusengimana/how-to-enable-dark-mode-in-chrome-on-ubuntuno-code-apps-themes-2p41.
+
 
 
