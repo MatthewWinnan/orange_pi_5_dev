@@ -17,7 +17,7 @@ The general steps used to flash the image on to a Micro SD card is as follows:
 2) Install the 7z zip tool. My main distro used to run initial configurations was an Ubuntu 18.04 machine. As such the command **sudo apt install p7zip-full** installed the needed package. Please follow any distro specific steps to obtain the package.
 3) Unzip the image with the 7z zip tool using the command **7z x Orangepi5_1.0.8_ubuntu_focal_desktop_xfce_linux5.10.110.7z**.
 4) Confirm the download was successful by running a checksum test using the command **sha256sum -c *.sha**.
-5) Download Balena etcher tool from https://www.balena.io/etcher/. Specifically the .AppImage.
+5) Download Balena etcher tool from https://www.balena.io/etcher/. Specifically the .AppImage. Or install the compressed version from radxa at https://github.com/balena-io/etcher/releases/download/v1.5.76/balena-etcher-electron-1.5.76-linux-x64.zip. I found that recently this version seems to work better. Also remember to unpack the .AppImage with a zip tool.
 6) First make sure you have a policy kit installed. I installed two as follows; **sudo apt install policykit-1-gnome** and **sudo apt install mate-polkit-bi**.
 7) Balena is aware of a bug that is caused even if a policy kit is installed (https://github.com/balena-io/etcher/issues/1179). However for me it was resolved by running the etcher tool from the CLI in sudo mode as follows **sudo ./balenaEtcher-1.13.1-x64.AppImage**, (This assumes you are in the local directory, else correslt point to it).
 8) Follow the basic etching steps given at https://wiki.radxa.com/Zero/getting_started.
